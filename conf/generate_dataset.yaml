@@ -1,0 +1,34 @@
+# Setup options
+environment_type: sim
+agent: vpg
+object_type: dexnet
+seed: 1234
+num_objects: 10
+heightmap_resolution: 0.002
+num_rotations: 16
+max_train_steps: 50000
+
+# Algorithm options
+future_reward_discount: 0.5
+explore_probability: 0.5
+explore_probability_decay: True
+
+# Testing options
+is_testing: False
+is_dense_arrangements: False
+max_test_episodes: 10
+model_weight: ''
+
+# Logging options
+log_directory: 'logs'
+save_visualization: False
+
+# Env options
+camera:
+  resolution: # NFOV_UNBINNED
+    width: 640
+    height: 576
+  fovy: 65
+  depth_noise:
+    mean: 0
+    std: 0.003

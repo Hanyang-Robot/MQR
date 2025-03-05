@@ -1,0 +1,26 @@
+# Setup options
+agent: MQR
+seed: 1234
+num_rotations: 16
+max_train_steps: 50001
+
+# Algorithm options
+future_reward_discount: 0.5
+method: 'max'
+
+# Dataset options
+log_directory: 'logs/MQR'
+save_visualization: False
+
+# Testing options
+is_testing: False
+
+# Env options
+camera:
+  resolution: # NFOV_UNBINNED
+    width: 640
+    height: 576
+  fovy: 65
+  depth_noise:
+    mean: 0
+    std: 0.003
