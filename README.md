@@ -1,6 +1,6 @@
 # MQR
 
-### Learning 6-DoF Grasp Policies using Reinforcement Learning
+### Learning pushing and grasping policy using Offline Reinforcement Learning
 
 ## Installation
 
