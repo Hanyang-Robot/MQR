@@ -45,28 +45,30 @@ python train.py
 * You must write the path to the offline dataset in the "log_directory" variable of the train.yaml file.
 
 ## Testing RL policy
-* testing RL policy on the simulation environment.
+# testing RL policy on the simulation environment with random arrangements.
 ```shell
-python test_sim.py
+python test_sim_random.py
 ```
-* If you want to modify the settings for testing sim policy, please refer to the "test_sim.yaml" file in the conf directory.
-* You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_sim.yaml file.
+* If you want to modify the settings for testing sim policy, please refer to the "test_sim_random.yaml" file in the conf directory.
+* You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_sim_random.yaml file.
 
-* testing RL policy on the simulation environment with dense arrangement.
+# testing RL policy on the simulation environment with dense arrangement.
 ```shell
 python test_sim_dense.py
 ```
 * If you want to modify the settings for testing sim_dense policy, please refer to the "test_sim_dense.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_sim_dense.yaml file.
-  
+
+# testing RL policy on the simulation environment with unknown objects.
+```shell
+python test_sim_unknown.py
+```
+* If you want to modify the settings for testing sim_dense policy, please refer to the "test_sim_unknown.yaml" file in the conf directory.
+* You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_sim_unknown.yaml file.
+
+# testing RL policy on the real environment.
 ```shell
 python test_real.py
 ```
 * If you want to modify the settings for testing real policy, please refer to the "test_real.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_real.yaml file.
-
-
-
-
-
-
