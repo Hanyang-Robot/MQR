@@ -30,6 +30,7 @@ python generate_dataset_sim.py
 * In addition, the transitions folder includes the action (executed_action.txt) and reward (reward_value.txt) data.
 * If you want to modify the settings for offline dataset collection, please refer to the "generate_dataset_sim.yaml" file in the conf directory.
 * The image below illustrates the process of collecting an offline dataset in the simulation environment.
+  
   <img width="1015" height="762" alt="Image" src="https://github.com/user-attachments/assets/9cb1ad91-f916-4072-b662-599438f5ec0c" />
   
 ## Collect an offline dataset in a real environment.
@@ -79,6 +80,7 @@ python test_real.py
 ```
 * If you want to modify the settings for testing real policy, please refer to the "test_real.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_real.yaml file.
+
 
 
 
