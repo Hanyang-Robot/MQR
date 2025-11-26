@@ -14,20 +14,26 @@ Paper: This paper is scheduled to be released through the official IEEE Transact
 This code has been tested with python 3.9, pytorch 1.12.0, NVIDIA DRIVER 470, CUDA 11.3, cuDNN 8.2.1 on Ubuntu 20.04.6 LTS.
 
 Create the conda env and install necessary python libraries.
-```
+```shell
 conda env create -f mqr.yaml
 ```
 
-## Inference
+## Collection Offline Dataset
+* Collect an offline dataset in a simulation environment.
+  ```shell
+  python generate_dataset.py
+  ```
+* Collect an offline dataset in a real environment.
+  ```shell
+  python generate_dataset_real.py
+  ```
+
+## Training RL policy
 ```shell
 python train.py
 ```
 
-
-
-
-
-
-
-
-
+## Testing RL policy
+```shell
+python test.py
+```
