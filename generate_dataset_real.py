@@ -1,4 +1,7 @@
+import os
 import time
+import numpy as np
+
 import agent
 import env
 from utils import load_config, set_seed
@@ -13,7 +16,7 @@ if config['is_continue']:
     agent.load_model('/model_backup.pth')
     agent.preload()
 else:
-    agent.load_model_sim_weights('/home/cai-tp/PROMPT/logs/online_VPG_050000.pth')
+    agent.load_model_sim_weights(os.getcwd() + '/logs/pretrain_weights_simulation.pth')
 
 time_step = env.reset() # {step_type, reward, discount, observation}
 next_state = time_step.observation
@@ -24,7 +27,7 @@ while agent.step < config['max_train_steps']:
     
     state = next_state
     action = agent.get_action(state) # {action_type, rotation_index(ccw), pixel_y, pixel_x, height}
-    print(f"action_type: {action[0]}, rotation_index(ccw): {action[1]}, pixel_y: {action[2]}, pixel_x: {action[3]}, height: {action[4]}")
+    print(f"action_type: {action[0]}, rotation_index(ccw): {action[1]}, pixel_y: {action[2]}, pixel_x: {action[3]}, height: {np.round(action[4])}")
     time_step = env.step(action)
     reward = time_step.reward
     next_state = time_step.observation
