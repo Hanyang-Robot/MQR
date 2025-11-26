@@ -23,6 +23,8 @@ conda env create -f mqr.yaml
   ```shell
   python generate_dataset_sim.py
   ```
+  <img width="1015" height="762" alt="Image" src="https://github.com/user-attachments/assets/9cb1ad91-f916-4072-b662-599438f5ec0c" />
+  
 * Collect an offline dataset in a real environment.
   ```shell
   python generate_dataset_real.py
@@ -35,6 +37,11 @@ python train.py
 
 ## Testing RL policy
 ```shell
-python test.py
+python test_sim.py
 ```
+
+```shell
+python test_real.py
+```
+
 
