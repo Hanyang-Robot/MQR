@@ -4,6 +4,8 @@ We propose the Most overestimated Q-value Regularization (MQR), a novel offline 
 ### The Most Overestimated Q-value Regularization in High-dimensional Discrete Action Spaces for Offline Reinforcement Learing
 Paper: This paper is scheduled to be released through the official IEEE Transactions on Neural Networks and Learning Systems (T-NNLS).
 
+<img width="2062" height="701" alt="Image" src="https://github.com/user-attachments/assets/61e14ed9-504c-4d02-9541-6eed3272a030" />
+
 ## Installation
 
 This code has been tested with python 3.9, pytorch 1.12.0, NVIDIA DRIVER 470, CUDA 11.3, cuDNN 8.2.1 on Ubuntu 20.04.6 LTS.
@@ -17,6 +19,7 @@ conda env create -f mqr.yaml
 ```shell
 python train.py
 ```
+
 
 
 
