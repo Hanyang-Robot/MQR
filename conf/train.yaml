@@ -1,0 +1,26 @@
+# Setup options
+agent: MQR                    # Choose one between MQR and CQL.
+seed: 1234
+num_rotations: 16
+max_train_steps: 50001        # The number of training iterations for the offline RL algorithm
+
+# Algorithm options
+future_reward_discount: 0.5   # discount factor 
+method: 'max'                 # Use ‘max’ for MQR and ‘sum’ for CQL.
+
+# Dataset options
+log_directory: 'logs/offline_dataset_sim/'  # Please write the path to the offline dataset.
+save_visualization: False
+
+# Testing options
+is_testing: False
+
+# Env options
+camera:
+  resolution: # NFOV_UNBINNED
+    width: 640
+    height: 576
+  fovy: 65
+  depth_noise:
+    mean: 0
+    std: 0.003

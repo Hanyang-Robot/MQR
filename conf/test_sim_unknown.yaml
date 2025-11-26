@@ -1,0 +1,33 @@
+# Setup options
+environment_type: sim
+agent: MQR                    # Choose one between MQR and CQL.
+object_type: daily
+seed: 77
+num_objects: 10               # The number of objects spawned within the robot workspace
+heightmap_resolution: 0.002
+num_rotations: 16
+
+# Algorithm options
+future_reward_discount: 0.5   # discount factor 
+method: False
+
+# Testing options
+is_continue: False
+is_testing: True
+env_dense: False
+max_test_steps: 30
+model_weight: 'model_weights_example/MQR_sim.pth'       # Please write the path to the weight file for offline RL policy.
+
+# Logging options
+log_directory: 'logs/test_sim_unknown/'
+save_visualization: False
+
+# Env options
+camera:
+  resolution: # NFOV_UNBINNED
+    width: 640
+    height: 576
+  fovy: 65
+  depth_noise:
+    mean: 0
+    std: 0.003

@@ -1,0 +1,37 @@
+# Setup options
+environment_type: sim
+agent: vpg
+object_type: dexnet
+seed: 1234
+num_objects: 10                   # The number of objects spawned within the robot workspace
+heightmap_resolution: 0.002
+num_rotations: 16
+max_train_steps: 50000            # The number of offline datasets to be collected
+
+# Is continue logging data?
+is_continue: False
+data_directory: False
+
+# Algorithm options
+future_reward_discount: 0.5       # discount factor 
+explore_probability: 0.5          # epsilon value for exploration (e.g, epsilon-greedy policy)
+explore_probability_decay: True   # When this value is enabled, the exploration probability gradually decreases from 50% to 10%.
+
+# Testing options
+is_testing: False
+env_dense: False
+model_weight: False
+
+# Logging options
+log_directory: 'logs/offline_dataset_sim/'
+save_visualization: False         # When this option is enabled, the grasp Q-map and push Q-map are stored, and note that these data can be quite large in size.
+
+# Env options
+camera:
+  resolution: # NFOV_UNBINNED
+    width: 640
+    height: 576
+  fovy: 65
+  depth_noise:
+    mean: 0
+    std: 0.003
