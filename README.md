@@ -36,6 +36,8 @@ conda env create -f mqr.yaml
   ```
   * The offline dataset collected in the real-world is stored in the "MQR/logs/offline_dataset_real/" directory.
   * If you want to modify the settings for offline dataset collection, please refer to the "generate_dataset_real.yaml" file in the conf directory.
+ 
+* You can download the offline dataset files from the Google Drive link: 
 
 ## Training offline RL policy
 ```shell
@@ -73,6 +75,7 @@ python test_real.py
 ```
 * If you want to modify the settings for testing real policy, please refer to the "test_real.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_real.yaml file.
+
 
 
 
