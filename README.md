@@ -6,7 +6,7 @@ Paper: This paper is scheduled to be released through the official IEEE Transact
 * The Overview of the proposed MQR framework
   <img width="2062" height="701" alt="Image" src="https://github.com/user-attachments/assets/61e14ed9-504c-4d02-9541-6eed3272a030" />
 
-* Example for robotic pushing and grasping
+* For example, robotic pushing and grasping tasks require precise decision-making within high-dimensional discrete action spaces.
   <img width="4256" height="2359" alt="Image" src="https://github.com/user-attachments/assets/5896d3d2-0c53-438d-b8a7-01f8d78f2d8e" />
 
 ## Installation
@@ -22,6 +22,7 @@ conda env create -f mqr.yaml
 ```shell
 python train.py
 ```
+
 
 
 
