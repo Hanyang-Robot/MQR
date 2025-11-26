@@ -54,7 +54,6 @@ python test_sim_random.py
 * You can download the weight files (MQR_sim.pth & MQR_real.pth) from the Google Drive link: https://drive.google.com/file/d/1-8dPlDZBAUrFACLcOj5VpgNwMYH-ySlO/view?usp=drive_link
 * If you want to modify the settings for testing sim policy, please refer to the "test_sim_random.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_sim_random.yaml file.
-  https://github.com/user-attachments/assets/6cf1d3eb-e9eb-4dd0-8973-67f943afa659
 
 ## Testing policy on the simulation environment with dense arrangement.
 ```shell
@@ -76,6 +75,7 @@ python test_real.py
 ```
 * If you want to modify the settings for testing real policy, please refer to the "test_real.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_real.yaml file.
+
 
 
 
