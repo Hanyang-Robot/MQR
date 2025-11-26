@@ -19,23 +19,23 @@ conda env create -f mqr.yaml
 ```
 
 # :two: Collection Offline Dataset
-* Collect an offline dataset in a simulation environment.
-  ```shell
-  python generate_dataset_sim.py
-  ```
-  * The offline dataset collected in the simulation is stored in the "MQR/logs/offline_dataset_sim/" directory.
-  * The data folder contains state information (RGB-D heightmap), while the models folder stores the parameters of the online VPG model.
-  * In addition, the transitions folder includes the action (executed_action.txt) and reward (reward_value.txt) data.
-  * If you want to modify the settings for offline dataset collection, please refer to the "generate_dataset_sim.yaml" file in the conf directory.
-  * The image below illustrates the process of collecting an offline dataset in the simulation environment.
-    <img width="1015" height="762" alt="Image" src="https://github.com/user-attachments/assets/9cb1ad91-f916-4072-b662-599438f5ec0c" />
+## Collect an offline dataset in a simulation environment.
+```shell
+python generate_dataset_sim.py
+```
+* The offline dataset collected in the simulation is stored in the "MQR/logs/offline_dataset_sim/" directory.
+* The data folder contains state information (RGB-D heightmap), while the models folder stores the parameters of the online VPG model.
+* In addition, the transitions folder includes the action (executed_action.txt) and reward (reward_value.txt) data.
+* If you want to modify the settings for offline dataset collection, please refer to the "generate_dataset_sim.yaml" file in the conf directory.
+* The image below illustrates the process of collecting an offline dataset in the simulation environment.
+  <img width="1015" height="762" alt="Image" src="https://github.com/user-attachments/assets/9cb1ad91-f916-4072-b662-599438f5ec0c" />
   
-* Collect an offline dataset in a real environment.
-  ```shell
-  python generate_dataset_real.py
-  ```
-  * The offline dataset collected in the real-world is stored in the "MQR/logs/offline_dataset_real/" directory.
-  * If you want to modify the settings for offline dataset collection, please refer to the "generate_dataset_real.yaml" file in the conf directory.
+## Collect an offline dataset in a real environment.
+```shell
+python generate_dataset_real.py
+```
+* The offline dataset collected in the real-world is stored in the "MQR/logs/offline_dataset_real/" directory.
+* If you want to modify the settings for offline dataset collection, please refer to the "generate_dataset_real.yaml" file in the conf directory.
  
 * You can download the offline dataset files from the Google Drive link: 
 
@@ -47,7 +47,7 @@ python train.py
 * You must write the path to the offline dataset in the "log_directory" variable of the train.yaml file.
 
 # :four: Testing offline RL policy
-### Testing policy on the simulation environment with random arrangements.
+## Testing policy on the simulation environment with random arrangements.
 ```shell
 python test_sim_random.py
 ```
@@ -55,26 +55,27 @@ python test_sim_random.py
 * If you want to modify the settings for testing sim policy, please refer to the "test_sim_random.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_sim_random.yaml file.
 
-### Testing policy on the simulation environment with dense arrangement.
+## Testing policy on the simulation environment with dense arrangement.
 ```shell
 python test_sim_dense.py
 ```
 * If you want to modify the settings for testing sim_dense policy, please refer to the "test_sim_dense.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_sim_dense.yaml file.
 
-### Testing policy on the simulation environment with unknown objects.
+## Testing policy on the simulation environment with unknown objects.
 ```shell
 python test_sim_unknown.py
 ```
 * If you want to modify the settings for testing sim_dense policy, please refer to the "test_sim_unknown.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_sim_unknown.yaml file.
 
-### Testing policy on the real environment.
+## Testing policy on the real environment.
 ```shell
 python test_real.py
 ```
 * If you want to modify the settings for testing real policy, please refer to the "test_real.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_real.yaml file.
+
 
 
 
