@@ -86,6 +86,10 @@ python test_real.py
 ```
 * If you want to modify the settings for testing real policy, please refer to the "test_real.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_real.yaml file.
+* Below is an example video for real environment experiments.
+
+  ![Image](https://github.com/user-attachments/assets/cf849ecd-3fc5-4950-83c3-e73b0f3ce246)
+
 
 
 
