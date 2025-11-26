@@ -1,6 +1,7 @@
-# MQR: The Most Overestimated Q-value Regularization in High-dimensional Discrete Action Spaces for Offline Reinforcement Learing
+# MQR
+hello
 
-### Learning pushing and grasping policy using Offline Reinforcement Learning
+### The Most Overestimated Q-value Regularization in High-dimensional Discrete Action Spaces for Offline Reinforcement Learing
 
 ## Installation
 
@@ -15,4 +16,5 @@ conda env create -f mqr.yaml
 ```shell
 python train.py
 ```
+
 
