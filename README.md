@@ -21,7 +21,7 @@ conda env create -f mqr.yaml
 ## Collection Offline Dataset
 * Collect an offline dataset in a simulation environment.
   ```shell
-  python generate_dataset.py
+  python generate_dataset_sim.py
   ```
 * Collect an offline dataset in a real environment.
   ```shell
@@ -37,3 +37,4 @@ python train.py
 ```shell
 python test.py
 ```
+
