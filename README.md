@@ -3,7 +3,7 @@ We propose the Most overestimated Q-value Regularization (MQR), a novel offline 
 
 ## The Most Overestimated Q-value Regularization in High-dimensional Discrete Action Spaces for Offline Reinforcement Learing
 Paper: This paper is scheduled to be released through the official IEEE Transactions on Neural Networks and Learning Systems (T-NNLS).
-* \bold{The Overview of the proposed MQR framework}
+* *The Overview of the proposed MQR framework*
   <img width="2062" height="701" alt="Image" src="https://github.com/user-attachments/assets/61e14ed9-504c-4d02-9541-6eed3272a030" />
 
 * For example, robotic pushing and grasping tasks require precise decision-making within high-dimensional discrete action spaces.
@@ -99,6 +99,7 @@ python test_real.py
   ![Image](https://github.com/user-attachments/assets/76b7f37d-aa24-4d53-aad9-be25e3eb8ff9)
 
   
+
 
 
 
