@@ -23,6 +23,9 @@ conda env create -f mqr.yaml
   ```shell
   python generate_dataset_sim.py
   ```
+  * The offline dataset collected in the simulation is stored in the "MQR/logs/offline_dataset_sim/" directory.
+  * The data folder contains state information (RGB-D heightmap), while the models folder stores the parameters of the online VPG model.
+  * In addition, the transitions folder includes the action (executed_action.txt) and reward (reward_value.txt) data.
   <img width="1015" height="762" alt="Image" src="https://github.com/user-attachments/assets/9cb1ad91-f916-4072-b662-599438f5ec0c" />
   
 * Collect an offline dataset in a real environment.
@@ -43,5 +46,6 @@ python test_sim.py
 ```shell
 python test_real.py
 ```
+
 
 
