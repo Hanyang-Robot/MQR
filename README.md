@@ -66,6 +66,9 @@ python test_sim_dense.py
 ```
 * If you want to modify the settings for testing sim_dense policy, please refer to the "test_sim_dense.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_sim_dense.yaml file.
+* Below is an example video for test_sim_dense.
+
+  ![Image](https://github.com/user-attachments/assets/8e412621-77b8-4373-b69e-0f306f36ef31)
 
 ## Testing policy on the simulation environment with unknown objects.
 ```shell
@@ -80,6 +83,7 @@ python test_real.py
 ```
 * If you want to modify the settings for testing real policy, please refer to the "test_real.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_real.yaml file.
+
 
 
 
