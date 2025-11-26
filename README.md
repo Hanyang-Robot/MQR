@@ -34,20 +34,37 @@ conda env create -f mqr.yaml
   ```shell
   python generate_dataset_real.py
   ```
+  * The offline dataset collected in the real-world is stored in the "MQR/logs/offline_dataset_real/" directory.
+  * If you want to modify the settings for offline dataset collection, please refer to the "generate_dataset_real.yaml" file in the conf directory.
 
-## Training RL policy
+## Training offline RL policy
 ```shell
 python train.py
 ```
+* If you want to modify the settings for training offline RL policy, please refer to the "train.yaml" file in the conf directory.
+* You must write the path to the offline dataset in the "log_directory" variable of the train.yaml file.
 
 ## Testing RL policy
+* testing RL policy on the simulation environment.
 ```shell
 python test_sim.py
 ```
+* If you want to modify the settings for testing sim policy, please refer to the "test_sim.yaml" file in the conf directory.
+* You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_sim.yaml file.
 
+* testing RL policy on the simulation environment with dense arrangement.
+```shell
+python test_sim_dense.py
+```
+* If you want to modify the settings for testing sim_dense policy, please refer to the "test_sim_dense.yaml" file in the conf directory.
+* You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_sim_dense.yaml file.
+  
 ```shell
 python test_real.py
 ```
+* If you want to modify the settings for testing real policy, please refer to the "test_real.yaml" file in the conf directory.
+* You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_real.yaml file.
+
 
 
 
