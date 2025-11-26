@@ -55,6 +55,8 @@ python test_sim_random.py
 ```
 * If you want to modify the settings for testing sim policy, please refer to the "test_sim_random.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_sim_random.yaml file.
+* Below is an example video for test_sim_random.
+  ![Image](https://github.com/user-attachments/assets/ebb07e8e-f3de-41b6-b8b5-0980665e7505)
 
 ## Testing policy on the simulation environment with dense arrangement.
 ```shell
@@ -76,6 +78,7 @@ python test_real.py
 ```
 * If you want to modify the settings for testing real policy, please refer to the "test_real.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_real.yaml file.
+
 
 
 
