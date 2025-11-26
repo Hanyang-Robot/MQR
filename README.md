@@ -19,7 +19,8 @@ conda env create -f mqr.yaml
 ```
 
 # :two: Collection Offline Dataset
-* You can download the offline dataset files (11.18 GB) from the Google Drive link: https://drive.google.com/file/d/1I0putLuqAi4DDrPeQHdzo8l-_EERKMWD/view?usp=sharing
+* You can download the offline dataset files (11.18 GB) from the Google Drive link:
+  https://drive.google.com/file/d/1I0putLuqAi4DDrPeQHdzo8l-_EERKMWD/view?usp=sharing
 ## Collect an offline dataset in a simulation environment.
 ```shell
 python generate_dataset_sim.py
@@ -46,7 +47,8 @@ python train.py
 * You must write the path to the offline dataset in the "log_directory" variable of the train.yaml file.
 
 # :four: Testing offline RL policy
-* You can download the weight files (233.6 MB) from the Google Drive link: https://drive.google.com/file/d/1_XPfSjmlC970fYzVtDx41ZBjn-56v2oJ/view?usp=sharing
+* You can download the weight files (233.6 MB) from the Google Drive link:
+  https://drive.google.com/file/d/1_XPfSjmlC970fYzVtDx41ZBjn-56v2oJ/view?usp=sharing
 ## Testing policy on the simulation environment with random arrangements.
 ```shell
 python test_sim_random.py
@@ -74,6 +76,7 @@ python test_real.py
 ```
 * If you want to modify the settings for testing real policy, please refer to the "test_real.yaml" file in the conf directory.
 * You must write the path to the weight file for offline RL policy in the "model_weight" variable of the test_real.yaml file.
+
 
 
 
