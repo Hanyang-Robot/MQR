@@ -2,7 +2,7 @@
 We propose the **Most overestimated Q-value Regularization (MQR)**, a novel offline reinforcement learning algorithm that penalizes the action with the most overestimated Q-value, effectively mitigating overestimation in high-dimensional discrete action spaces. This repository provides **mujoco and pytorch code for training and testing MQR**.
 
 ## The Most Overestimated Q-value Regularization in High-dimensional Discrete Action Spaces for Offline Reinforcement Learing
-**Paper**: [https://ieeexplore.ieee.org/abstract/document/11304592](url)
+**Paper**: https://ieeexplore.ieee.org/abstract/document/11304592
 * **The Overview of the proposed MQR framework**
   <img width="2062" height="701" alt="Image" src="https://github.com/user-attachments/assets/61e14ed9-504c-4d02-9541-6eed3272a030" />
 
@@ -108,5 +108,6 @@ python test_real.py
   publisher={IEEE}
 }
 ```
+
 
 
